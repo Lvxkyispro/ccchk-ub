@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ccchk-ub
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python3 -m ubb
+    envVars:
+      - key: API_ID
+        value: 'your_api_id_here'
+      - key: API_HASH
+        value: 'your_api_hash_here'
+      - key: STRING_SESSION
+        value: 'your_string_session_here'
+      - key: DUMP_ID
+        value: 'your_dump_id_here'
+        
